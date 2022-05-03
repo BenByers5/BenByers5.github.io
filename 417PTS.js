@@ -1,4 +1,4 @@
-var pts=
+var pts =
 {
 "type": "FeatureCollection",
 "name": "417PTS",
