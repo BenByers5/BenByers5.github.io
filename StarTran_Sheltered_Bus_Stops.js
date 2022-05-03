@@ -837,3 +837,4 @@ Var Stops =
 { "type": "Feature", "properties": { "OBJECTID": 19923, "ID": "831", "Route_Numb": "52", "Route": "52", "SidewalkAc": "Yes", "Cutout": "Yes", "Bench": "No", "Shelter": "No", "ConcretePad": "No", "SnowRemoval": "No Snow Removal", "UtilityPol": "No", "Intersect1": "NW 12th St & Isaac Dr", "Direction": "SW", "DoT": "S", "Route2": null, "Route3": null, "Route4": null, "Route5": null, "Route6": null, "Route7": null, "Comments": null, "TP": null, "UNLShared": null, "UNL1": null, "UNL2": null, "UNL3": null, "Signs": "yes", "Brackets": "yes", "SquarePost": null, "X": 150345.46681799999, "Y": 222595.62916715001, "CreatedBy": null, "CreatedDate": null, "EditedBy": null, "EditedDate": null }, "geometry": { "type": "Point", "coordinates": [ -96.737566820737513, 40.860943294147496 ] } }
 ]
 }
+;
