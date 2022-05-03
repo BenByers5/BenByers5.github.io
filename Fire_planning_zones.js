@@ -1,4 +1,4 @@
-var firezones=
+var firezones =
 {
 "type": "FeatureCollection",
 "name": "Fire_planning_zones",
