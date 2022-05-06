@@ -1,4 +1,4 @@
-var Stops =
+var StarTran_Sheltered_Bus_Stops2 =
 {
 "type": "FeatureCollection",
 "name": "StarTran_Sheltered_Bus_Stops2",
