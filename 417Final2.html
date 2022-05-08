@@ -84,7 +84,12 @@
              return 0.9 * Math.pow(val/minValue, 7.7) * minRadius;
             }
 
-          var popup = '<h2>' + prop['TotalSpe_1'] + '</h2>';
+		var onEachFeature = function(feature, layer) {
+              if (feature.properties) {
+                var prop = feature.properties;
+
+		
+          var popup = '<h2>' + prop['Total_Leng','TotalSpe_1'] + '</h2>';
 
                 feature.layer = layer;
                 layer.bindPopup(popup, {maxWidth: "auto"});
