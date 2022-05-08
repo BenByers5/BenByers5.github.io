@@ -81,7 +81,7 @@
             var minValue = 100;
             var minRadius = 2;
             function calcRadius(val) {
-             return 0.9 * Math.pow(val/minValue, 7.7) * minRadius;
+             return 0.9 * Math.pow(val/minValue, 0.7) * minRadius;
             }
 
       var pts  = new L.geoJson(pts, {
@@ -93,7 +93,7 @@
               weight: 2,
               fillColor: '#808080',
               fillOpacity: .25,
-              radius: calcRadius(feature.properties.TotalSpe_1)
+              radius: calcRadius(feature.properties.Total_Leng)
           });
       }
       }).addTo(map);
