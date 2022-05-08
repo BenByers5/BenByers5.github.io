@@ -111,19 +111,6 @@
       }
       }).addTo(map);
 
-      var onEachFeature = function(feature, layer) {
-              if (feature.properties) {
-                var prop = feature.properties;
-
-
-
-      var popup = '<h2>' + prop['Name'] + '</h2>';
-
-                feature.layer = layer;
-                layer.bindPopup(popup, {maxWidth: "auto"});
-              }
-            };
-
 
       var Origin  = new L.geoJson(Origin, {
         style: style,
