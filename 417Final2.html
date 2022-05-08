@@ -99,6 +99,8 @@
 
       var pts  = new L.geoJson(pts, {
         style:style,
+	        onEachFeature: onEachFeature
+
         pointToLayer: function(feature, ll){
           return L.circleMarker(ll, {
               color: '#000000',
@@ -114,7 +116,6 @@
 
       var Origin  = new L.geoJson(Origin, {
         style: style,
-        onEachFeature: onEachFeature
       }).addTo(map);
 
 
