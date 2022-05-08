@@ -78,23 +78,25 @@
                 };
             }
 
-            var minValue = 100;
-            var minRadius = 2;
-            function calcRadius(val) {
-             return 0.9 * Math.pow(val/minValue, 7.7) * minRadius;
-            }
-
-		var onEachFeature = function(feature, layer) {
+		 var onEachFeature = function(feature, layer) {
               if (feature.properties) {
                 var prop = feature.properties;
 
-		
-          var popup = '<h2>' + prop['Total_Leng','TotalSpe_1'] + '</h2>';
+
+
+      var popup = '<h2>' + prop['Total_Leng','TotalSpe_1'] + '</h2>';
 
                 feature.layer = layer;
                 layer.bindPopup(popup, {maxWidth: "auto"});
-            ;
-          
+              }
+            };
+		
+            var minValue = 100;
+            var minRadius = 2;
+            function calcRadius(val) {
+             return 0.9 * Math.pow(val/minValue, 0.7) * minRadius;
+            }
+
       var pts  = new L.geoJson(pts, {
         style:style,
         pointToLayer: function(feature, ll){
@@ -104,7 +106,7 @@
               weight: 2,
               fillColor: '#808080',
               fillOpacity: .25,
-              radius: calcRadius(feature.properties.TotalSpe_1)
+              radius: calcRadius(feature.properties.Total_Leng)
           });
       }
       }).addTo(map);
