@@ -67,10 +67,20 @@
   	ext: 'png'
 });
 
+function getColor(value) {
+            return value < 0  ?  '#f60404':
+                   value < 1  ? '#0ef604':
+                   value < 2  ? '#0ef604':
+                   value < 3  ? '#bbf604':
+                   value < 4  ? '#f6e904':
+                   value < 5  ? '#f6ae04':
+                   value < 6  ? '#f60f04':
+                                '#f60404';
+}
 
 	function style(feature){
                 return {
-                    fillColor: "#ff0000", //getColor(feature.properties.POP10),
+                    fillColor: getColor(feature.properties.TotalSpe_1),
                     weight: 2,
                     opacity: .5,
                     color: 'gray',
